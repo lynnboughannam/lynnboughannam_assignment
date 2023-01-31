@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table-2,
+        .table-3 {
+            width: 100%;
+
+        }
+
+        .table-2 {
+            background-color: rgb(219, 219, 219);
+
+        }
+
+
+        .bold {
+
+            font-weight: bold;
+        }
+
+        .red-star {
+            color: red;
+        }
+
+        .col1 {
+            width: 100px;
+
+        }
+
+        th {
+            text-align: left;
+        }
+
+        .light,
+        .dark {
+            background-color: rgb(246, 246, 246);
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td width="420px">
+                    <label class="bold" for="title">
+                        Title:<span class="red-star">*</span><br>
+                    </label>
+                    <input type="text" name="title" id="title" style="width: 400px" value="Astronomy for Poets"
+                        required>
+                </td>
+                <td width="220px">
+                    <label class="bold" for="shorttitle">
+                        Short Title:<span class="red-star">*</span> <br>
+                    </label>
+                    <input type="text" name="shorttitle" id="shorttitle" style="width: 200px" value="Astr. for Poets"
+                        required>
+                </td>
+                <td width="50px">
+                    <label class="bold" for="subj">
+                        Subj.: <br>
+                        <p style="font-weight: lighter; font-size: 11px; margin-top: 0;">BLST</p>
+
+                    </label>
+                </td>
+                <td width="50px">
+                    <label class="bold" for="num">
+                        Num: <br></label>
+                    <input type="text" id="num" style="width: 20px;" value="10" />
+
+
+
+                </td>
+                <td width="60px">
+
+                    <label class="bold" for="sec">
+                        Section: <br>
+                    </label>
+                    <input type="text" id="sec" style="width: 30px" value="01" />
+                </td>
+
+
+                <td width="60px">
+
+                    <label class="bold" for="sec">
+                        Year: <br>
+                        <p style="font-weight: lighter; font-size: 11px; margin-top: 0;">0910</p>
+
+                    </label>
+
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table class="table-2">
+            <tr class="light">
+
+                <td>
+                    <input type="checkbox" name=" enroll" id="enroll">
+
+                </td>
+
+                <td class="col1">
+                    <label class="bold" for="enroll">Enrollment limit</label>
+                </td>
+
+                <td width="50px">
+                    <label class="bold" for="num1">
+                        Num: <br></label>
+                    <input type="text" id="num1" style="width: 20px;" />
+                </td>
+
+                <td width="420px">
+                    <label class="bold" for="Rationale1">
+                        Rationale:<br>
+                    </label>
+                    <input type="text" name="rationale1" id="rationale1" style="width: 400px">
+
+                </td>
+
+                <td rowspan="4" width="150px">
+                    <!--We can also make a datalist so the user can enter the preferable number-->
+                    <label class="bold" for="class-meet">Class Meetings/Week:</label><br>
+                    <select name="class-meet" id="class-meet">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+
+
+                    <label class="bold" for="class-hour">Class Hours/Week:</label>
+                    <br>
+                    <select name="class-hour" id="class-hour">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+                    <label class="bold" for="sem-offer">Semester(s) Offered:</label>
+                    <br>
+                    <select name="sem-offer" id="class-hour">
+                        <option value="none">--None--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                    <br><br>
+                    <input type="checkbox" name="incl" id="incl" checked>
+                    <label for="incl">Incl. semester in prereqs</label>
+
+                    <br><br>
+                    <input type="checkbox" name="offered" id="offered">
+                    <label for="offered">Offered only Once</label>
+
+                    <br><br>
+                    <input type="checkbox" name="incl-catalog" id="incl-catalog">
+                    <label for="incl-catalog">Incl. in printed catalog</label>
+                </td>
+
+                <td rowspan="4">
+                    <label class="bold" for="keywords">Keywords:</label><br>
+
+
+                    <input type="checkbox" name="key1" id="key1">
+                    <label for="key1">Science for non-majors</label><br>
+                    <br>
+
+                    <input type="checkbox" name="key2" id="key2">
+                    <label for="key2">Fine arts for non-majors</label><br>
+                    <br>
+
+
+                    <input type="checkbox" name="key3" id="key3">
+                    <label for="key3">Lab science course</label><br>
+                    <br>
+
+
+                    <input type="checkbox" name="key4" id="key4">
+                    <label for="key4">Artistic practice</label><br>
+                    <br>
+
+                    <input type="checkbox" name="key5" id="key5">
+                    <label for="key5">Foreign Language/culture taught in English</label><br>
+                    <br>
+
+                    <input type="checkbox" name="key6" id="key6">
+                    <label for="key6">Community based learning</label><br>
+                    <br>
+                    <input type="checkbox" name="key7" id="key7">
+                    <label for="key7">Writing attentive</label><br>
+                    <br>
+
+                    <input type="checkbox" name="key8" id="key8">
+                    <label for="key8">Writing intensive</label><br>
+
+
+
+                </td>
+            </tr>
+
+            <tr class="dark">
+                <td>
+                    <input type="checkbox" name="consent" id="consent">
+
+                </td>
+                <td class="col1">
+                    <label class="bold" for="consent">Consent Required</label>
+                </td>
+                <td></td>
+
+                <td width="420px">
+                    <label class="bold" for="Rationale2">
+                        Rationale:<br>
+                    </label>
+                    <input type="text" name="rationale2" id="rationale1" style="width: 400px">
+                </td>
+            </tr>
+
+            <tr class="light">
+
+                <td>
+                    <input type="checkbox" name=" limit" id="limit">
+
+                </td>
+
+                <td class="col1">
+                    <label class="bold" for="limit">Limit class level</label>
+                </td>
+
+                <td width="50px">
+                    <label class="bold" for="code">
+                        Code: <br></label>
+                    <input type="text" id="code" style="width: 20px;" />
+                </td>
+
+                <td width="420px">
+                    <label class="bold" for="rationale3">
+                        Rationale:<br>
+                    </label>
+                    <input type="text" name="rationale3" id="rationale3" style="width: 400px">
+                    <br><br>
+
+                    <label class="bold" for="over-enroll">
+                        How to handle over-enrollment:<br>
+                    </label>
+                    <input type="text" name="over-enroll" id="over-enroll" style="width: 400px">
+                </td>
+
+            </tr>
+            <tr class="dark">
+
+                <td>
+                    <input type="checkbox" name=" limit" id="limit">
+
+                </td>
+
+                <td class="col1">
+                    <label class="bold" for="limit">Limit class level</label>
+                </td>
+
+                <td width="50px">
+                    <label class="bold" for="code">
+                        Code: <br></label>
+                    <input type="text" id="code" style="width: 20px;" />
+                </td>
+
+                <td width="420px">
+                    <label class="bold" for="rationale4">
+                        Rationale:<br>
+                    </label>
+                    <input type="text" name="rationale4" id="rationale4" style="width: 400px">
+                    <br><br>
+
+                    <label class="bold" for="required">
+                        Required Prereqs,(major,course)<br>
+                    </label>
+                    <input type="text" name="required" id="required" style="width: 400px">
+
+                    <br><br>
+
+                    <label class="bold" for="recommended">
+                        Recommended Prereqs:<br>
+                    </label>
+                    <input type="text" name="recommended" id="recommended" style="width: 400px">
+                </td>
+
+            </tr>
+
+        </table>
+
+        <table class="table-3">
+            <tr>
+                <th>Approvals:</th>
+                <th>Date:</th>
+                <th>Comment:</th>
+
+            </tr>
+            <tr>
+
+                <td><input type="checkbox" name="cep" id="cep">
+                    <label for="cep">CEP</label>
+                </td>
+
+                <td class="light">
+                    <p>+
+                        <input type="text" name="date1" id="date1">
+                    </p>
+                </td>
+                <td class="light ">
+
+                    <p>+
+                        <input type="text" name="comment1" id="comment1" style="width: 700px">
+                    </p>
+                </td>
+
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="commity" id="commity">
+                    <label for="commity">Committee of Six</label>
+                </td>
+
+                <td class="dark">
+                    <p>+
+                        <input type="text" name="date2" id="date2">
+                    </p>
+                </td>
+                <td class="dark">
+                    <p>+
+                        <input type="text" name="comment2" id="comment2" style="width: 700px">
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="faculty" id="faculty">
+                    <label for="faculty">Faculty</label>
+                </td>
+
+
+                <td class="light ">
+                    <p>+
+                        <input type="text" name="date3" id="date3">
+                    </p>
+                </td>
+                <td class="light ">
+                    <p>+
+                        <input type=" text" name="comment3" id="comment3" style="width: 700px">
+                    </p>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
